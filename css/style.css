@@ -1,0 +1,30 @@
+/* General reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sitewide colours */
+:root {
+    --brand: #0EA5E9;
+    --brand-dark: #0369A1;
+    --brand-light: #E0F2FE;
+    --brand-ll: #F0F9FF;
+    --surface: #ffffff;
+    --surface-2: #F8FAFC;
+    --surface-3: #F1F5F9;
+    --text-1: #0F172A;
+    --text-2: #475569;
+    --text-3: #94A3B8;
+    --border: #E2E8F0;
+    --border-strong: #CBD5E1;
+    --font: 'Segoe UI', Arial, sans-serif;
+  }
+  
+body {
+    font-family: var(--font);
+    color: var(--text-1);
+    background: var(--surface);
+}
+  
