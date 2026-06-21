@@ -22,6 +22,37 @@
             <img src="../mondoAtlas/assets/images/university-of-greenwich-logo.png">
         </div>
     </section>
+    <section>
+        <h2>Website feedback form</h2>
+        <p>Share your thoughts, complaints, or general feedback with us</p>
+        <form action="/send">
+            <p>
+                <lable for="name">Your Name</lable>
+                <input type="text" id="name" name="fName" placeholder="Jane Smith">
+            </p>
+            <p>
+                <lable for="email">Your Email Address: </lable>
+                <input type="email" id="email" name="fEmail" placeholder="youremail@mail.com">
+            </p>
+            <p>
+                <lable for="reason">Reason</lable>
+                <select id="reason" name="fReason">
+                    <option>General enquiry</option>
+                    <option>Feedback</option>
+                    <option>Complaint</option>
+                    <option>Other</option>
+                </select>
+            </p>
+            <p>
+                <lable for="feedbackField">Your Feedback: </lable>
+                <br>
+                <textarea id="feedbackField" name="fMessage" rows="10" cols="50">You can write your message here.</textarea>
+            </p>
+            
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+    </section>
     <footer>Mondo Atlas | Project Study</footer> 
 </body>
 </html>
