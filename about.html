@@ -28,7 +28,7 @@
         <form action="/send">
             <p>
                 <lable for="name">Your Name</lable>
-                <input type="text" id="name" name="fName" placeholder="Jane Smith">
+                <input type="text" id="name" name="fName" placeholder="Jane Smith" required>
             </p>
             <p>
                 <lable for="email">Your Email Address: </lable>
@@ -36,7 +36,7 @@
             </p>
             <p>
                 <lable for="reason">Reason</lable>
-                <select id="reason" name="fReason">
+                <select id="reason" name="fReason" required>
                     <option>General enquiry</option>
                     <option>Feedback</option>
                     <option>Complaint</option>
@@ -46,7 +46,7 @@
             <p>
                 <lable for="feedbackField">Your Feedback: </lable>
                 <br>
-                <textarea id="feedbackField" name="fMessage" rows="10" cols="50">You can write your message here.</textarea>
+                <textarea id="feedbackField" name="fMessage" rows="10" cols="50" minlength="20" required>You can write your message here.</textarea>
             </p>
             
             <input type="submit" value="Submit Feedback">
