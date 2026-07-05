@@ -45,7 +45,6 @@ h1, h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    border: 1px red solid;
     position:relative;
 }
 
@@ -56,29 +55,30 @@ h1, h2 {
     border-radius: 50%;
     width: 1em;
     height: 1em;
+    transform: translate(-50%, -50%);
 }
 
 #australiaDot {
-   top: 78%;
-   left: 83%;
+   top: 79%;
+   left: 84%;
 
 }
 #canadaDot {
-    top: 27%;
+    top: 28%;
     left: 17%;
 }
 
 #germanyDot {
-    top: 31%;
-    left: 49%;
+    top: 32%;
+    left: 49.5%;
 }
 #uaeDot {
-    top: 50%;
-    left: 61%;
+    top: 50.5%;
+    left: 61.5%;
 }
 #usaDot {
-    top: 39%;
-    left: 18%;
+    top: 41%;
+    left: 19%;
 }
 
  /* Dots glow */
