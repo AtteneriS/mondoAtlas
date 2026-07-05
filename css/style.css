@@ -23,7 +23,13 @@
   }
 */
 
-/* Sitewide styles */
+/* ====================================
+SITEWIDE STYLES
+==================================== */
+
+/* For reponsiveness:
+@media (max-width: 768px) {}
+@media (max-width: 576px) {} */
 body {
     font-family: Lato, sans-serif;
     display: flex;
@@ -35,7 +41,53 @@ h1, h2 {
     font-weight: 600;
 }
 
+/* Top navigation styles */
+#topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 1em;
+    border: 1px solid green;
 
+}
+
+#siteLogo {
+    font-family: Monserrat, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    border: 1px solid red;
+    justify-content: center;
+}
+#siteLogo img {
+    height: 1em;
+    width: auto;
+    margin-right: 0.3em;
+    
+    border: 1px solid purple;
+}
+#topNav ul {
+    border: 1px solid red;
+    list-style: none;
+    display: flex;
+}
+
+#navItems li {
+    padding: 0.5em;
+}
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    align-self: center;
+}
+
+
+/* ====================================
+INDEX PAGE STYLES
+==================================== */
 /* Interactive Map styles */
 /* Map settings */
 #map{
@@ -93,6 +145,3 @@ h1, h2 {
     cursor: pointer;
 }
 
-footer {
-    align-self: center;
-}
