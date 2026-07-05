@@ -26,6 +26,8 @@
 /* Sitewide styles */
 body {
     font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
 } 
 
 h1, h2 {
@@ -46,6 +48,7 @@ h1, h2 {
     background-repeat: no-repeat;
     background-position: top;
     position:relative;
+    flex-grow: 1;
 }
 
 /* Dots positions */
@@ -88,4 +91,8 @@ h1, h2 {
     transform: scale(1.5);
     transition: 0.25s ease-out;
     cursor: pointer;
+}
+
+footer {
+    align-self: center;
 }
