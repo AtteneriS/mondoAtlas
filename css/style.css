@@ -5,8 +5,8 @@
     padding: 0;
 }
 
-/* Sitewide colours */
-:root {
+
+/* :root {
     --primary: #0EA5E9;
     --primary-dark: #0369A1;
     --primary-light: #E0F2FE;
@@ -21,10 +21,39 @@
     --border-strong: #CBD5E1;
     --font: 'Segoe UI', Arial, sans-serif;
   }
-  
+*/
+
+/* Sitewide styles */
 body {
-    font-family: var(--font);
-    color: var(--text-1);
-    background: var(--surface);
+    font-family: Lato, sans-serif;
+} 
+
+h1, h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
 }
-  
+
+
+/* Interactive Map styles */
+#map{
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("../assets/images/world_map.png");
+    background-size: cover;
+    background-position: top;
+}
+.countryDot {
+    background-color: blue;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    margin: 20px auto;
+}
+
+.countryDot:hover {
+    background-color: mediumblue;
+    box-shadow: 0 0 0.5em 0.2em hsla(195, 53%, 79%, 0.75);
+    transform: scale(1.5);
+    transition: 0.25s ease-out;
+    cursor: pointer;
+}
