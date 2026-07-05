@@ -35,21 +35,53 @@ h1, h2 {
 
 
 /* Interactive Map styles */
+/* Map settings */
 #map{
     width: 90%;
+    max-width: 1600px;
     margin: 0 auto;
+    aspect-ratio: 2.05/1;
     background-image: url("../assets/images/world_map.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
+    border: 1px red solid;
+    position:relative;
 }
+
+/* Dots positions */
 .countryDot {
+    position: absolute;
     background-color: blue;
     border-radius: 50%;
     width: 1em;
     height: 1em;
-    margin: 20px auto;
 }
 
+#australiaDot {
+   top: 78%;
+   left: 83%;
+
+}
+#canadaDot {
+    top: 27%;
+    left: 17%;
+}
+
+#germanyDot {
+    top: 31%;
+    left: 49%;
+}
+#uaeDot {
+    top: 50%;
+    left: 61%;
+}
+#usaDot {
+    top: 39%;
+    left: 18%;
+}
+
+ /* Dots glow */
 .countryDot:hover {
     background-color: mediumblue;
     box-shadow: 0 0 0.5em 0.2em hsla(195, 53%, 79%, 0.75);
