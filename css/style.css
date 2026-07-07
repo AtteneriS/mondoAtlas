@@ -5,24 +5,6 @@
     padding: 0;
 }
 
-
-/* :root {
-    --primary: #0EA5E9;
-    --primary-dark: #0369A1;
-    --primary-light: #E0F2FE;
-    --primary-ll: #F0F9FF;
-    --surface: #ffffff;
-    --surface-2: #F8FAFC;
-    --surface-3: #F1F5F9;
-    --text-1: #0F172A;
-    --text-2: #475569;
-    --text-3: #94A3B8;
-    --border: #E2E8F0;
-    --border-strong: #CBD5E1;
-    --font: 'Segoe UI', Arial, sans-serif;
-  }
-*/
-
 /* ====================================
 SITEWIDE STYLES
 ==================================== */
@@ -34,7 +16,14 @@ body {
     font-family: Lato, sans-serif;
     display: flex;
     flex-direction: column;
+    color: #0F172A;
+    background-color: white;
+    min-height: 100vh;
 } 
+
+main {
+    max-width: 1200px;
+}
 
 h1, h2 {
     font-family: Montserrat, sans-serif;
@@ -46,26 +35,33 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2em 1em;
+    margin: 0 auto;
+    padding: 1.20em 2.5em;
+    width: 100%;
 
 }
 
 #siteLogo {
     font-family: Monserrat, sans-serif;
+    color: #023047;
     font-weight: 600;
     font-size: 1.2em;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
 }
+
 #siteLogo img {
     height: 1em;
     width: auto;
-    margin-right: 0.3em;
 }
 
 #topNav ul {
     list-style: none;
     display: flex;
+    gap: 0.25rem;
+    align-items: center;
 }
 
 #navItems li {
