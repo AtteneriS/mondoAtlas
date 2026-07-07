@@ -47,7 +47,6 @@ h1, h2 {
     justify-content: space-between;
     align-items: center;
     margin: 2em 1em;
-    border: 1px solid green;
 
 }
 
@@ -55,18 +54,16 @@ h1, h2 {
     font-family: Monserrat, sans-serif;
     font-weight: 600;
     font-size: 1.2em;
-    border: 1px solid red;
-    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 #siteLogo img {
     height: 1em;
     width: auto;
     margin-right: 0.3em;
-    
-    border: 1px solid purple;
 }
+
 #topNav ul {
-    border: 1px solid red;
     list-style: none;
     display: flex;
 }
@@ -78,11 +75,43 @@ a, a:visited {
     text-decoration: none;
     color: black;
 }
+#navItems a:hover{
+    text-decoration: underline solid 1px blue;
+    color: blue;
+    padding-bottom: 5px;
+}
+
+#activeNav {
+    background-color: rgb(179, 201, 201);
+    border-radius: 1em;
+    text-decoration: underline solid 1px;
+}
+#activeNav a{
+    padding: 1em;
+}
+#navItems a:active {
+    color: rgb(165, 171, 177);
+    text-decoration: underline solid 1px;
+}
+
+
+/* Hero Section */
+.heroSection {
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+
 
 /* Footer Styles */
 footer {
     align-self: center;
 }
+
+
+
 
 
 /* ====================================
@@ -140,7 +169,7 @@ INDEX PAGE STYLES
 .countryDot:hover {
     background-color: mediumblue;
     box-shadow: 0 0 0.5em 0.2em hsla(195, 53%, 79%, 0.75);
-    transform: scale(1.5);
+    transform: scale(1.5) translate(-30%, -30%);
     transition: 0.25s ease-out;
     cursor: pointer;
 }
