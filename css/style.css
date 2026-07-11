@@ -50,7 +50,6 @@ a:visited {
 }
 
 /*===== Top navigation styles  =====*/
-
 #topNav {
     display: flex;
     justify-content: space-between;
@@ -114,8 +113,6 @@ li#activeNav a {
     text-underline-offset: 0.3rem; */
 
 }
-
-
 
 /*===== Hero Section =====*/
 .heroSection {
@@ -247,4 +244,70 @@ INDEX PAGE STYLES
     box-shadow: 0 0 0.8em 0.2em rgba(255, 255, 255, 0.6);
     transform: scale(1.5) translate(-30%, -30%);
     cursor: pointer;
+}
+
+
+/* ====================================
+EXPLORE PAGE STYLES
+==================================== */
+.cardSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 0.5rem;
+    row-gap: 2em;
+}
+
+.countryCard {
+    flex: 0 1 auto;
+    max-width: 350px;
+    border: 2px solid rgba(33, 157, 188, 0.5);
+    box-shadow: 0 4px 8px rgba(2, 48, 71, 0.2);
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.countryCard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* display: block; */
+}
+
+.cardText {
+    padding: 1em 2em;
+}
+
+.cardText h3 {
+    font-family: Montserrat;
+    font-size: 1.3em;
+    color: #023047;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.cardText P {
+    color: #023047;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.cardText a,
+.cardText a:visited {
+    color: #fff;
+    display: inline-block;
+    background-color: #219ebc;
+    border-radius: 2em;
+    font-size: 0.9em;
+    padding: 0.5em;
+    transition: all 0.2s ease;
+}
+
+.cardText a:hover {
+    background-color: #fb8500;
+    transform: translateY(-1px);
 }
