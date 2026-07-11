@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Mondo Atlas - Explore</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-    <nav>
-        <div>Mondo Atlas</div>
-        <ul>
+    <!-- Main page navigation -->
+    <nav id="topNav">
+        <a href="./index.html">
+            <div id="siteLogo"><img src="./assets/images/logo.svg" alt="globe logo"><span>Mondo Atlas</span></div>
+        </a>
+        <ul id="navItems">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./explore.html">Explore</a></li>
+            <li id="activeNav"><a href="./explore.html">Explore</a></li>
             <li><a href="./about.html">About</a></li>
         </ul>
     </nav>
     <main>
         <header>
             <h1>Explore and compare</h1>
-            <p>Here you will find all the countries we hace information for, plus a handy comparison table for a quick overview</p>
+            <p>Here you will find all the countries we hace information for, plus a handy comparison table for a quick
+                overview</p>
         </header>
         <section>
             <div><a href="./countries/australia.html">Australia</a></div>
@@ -32,146 +38,147 @@
             <H2>Compare</H2>
             <table>
                 <thead>
-                <tr>
-                    <th></th>
-                    <th>Australia</th>
-                    <th>Canada</th>
-                    <th>Gerrmany</th>
-                    <th>UAE</th>
-                    <th>USA</th>
-                </tr>
+                    <tr>
+                        <th></th>
+                        <th>Australia</th>
+                        <th>Canada</th>
+                        <th>Gerrmany</th>
+                        <th>UAE</th>
+                        <th>USA</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <!-- General info -->
-                <tr>
-                    <td colspan="6">Basic Info</td>
-                </tr>
-                <tr>
-                    <td>Capital</td>
-                    <td>Canberra</td>
-                    <td>Canberra</td>
-                    <td>Canberra</td>
-                    <td>Canberra</td>
-                    <td>Canberra</td>
-                </tr>
-                <tr>
-                    <td>Population</td>
-                    <td>28.5M</td>
-                    <td>28.5M</td>
-                    <td>28.5M</td>
-                    <td>28.5M</td>
-                    <td>28.5M</td>
-                </tr>
-                <tr>
-                    <td>Language</td>
-                    <td>English</td>
-                    <td>English</td>
-                    <td>English</td>
-                    <td>English</td>
-                    <td>English</td>
-                </tr>
-                <tr>
-                    <td>Currency</td>
-                    <td> $ AUD</td>
-                    <td> $ AUD</td>
-                    <td> $ AUD</td>
-                    <td> $ AUD</td>
-                    <td> $ AUD</td>
-                </tr>
-                <!-- Climate info -->
-                <tr>
-                    <td colspan="6">Climate</td>
-                </tr>
-                <tr>
-                    <td>Climate type</td>
-                    <td>Varied</td>
-                    <td>Varied</td>
-                    <td>Varied</td>
-                    <td>Varied</td>
-                    <td>Varied</td>
-                </tr>
-                <tr>
-                    <td>Average min temp</td>
-                    <td>15<sup>o</sup></td>
-                    <td>15<sup>o</sup></td>
-                    <td>15<sup>o</sup></td>
-                    <td>15<sup>o</sup></td>
-                    <td>15<sup>o</sup></td>
+                    <!-- General info -->
+                    <tr>
+                        <td colspan="6">Basic Info</td>
+                    </tr>
+                    <tr>
+                        <td>Capital</td>
+                        <td>Canberra</td>
+                        <td>Canberra</td>
+                        <td>Canberra</td>
+                        <td>Canberra</td>
+                        <td>Canberra</td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td>28.5M</td>
+                        <td>28.5M</td>
+                        <td>28.5M</td>
+                        <td>28.5M</td>
+                        <td>28.5M</td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>Currency</td>
+                        <td> $ AUD</td>
+                        <td> $ AUD</td>
+                        <td> $ AUD</td>
+                        <td> $ AUD</td>
+                        <td> $ AUD</td>
+                    </tr>
+                    <!-- Climate info -->
+                    <tr>
+                        <td colspan="6">Climate</td>
+                    </tr>
+                    <tr>
+                        <td>Climate type</td>
+                        <td>Varied</td>
+                        <td>Varied</td>
+                        <td>Varied</td>
+                        <td>Varied</td>
+                        <td>Varied</td>
+                    </tr>
+                    <tr>
+                        <td>Average min temp</td>
+                        <td>15<sup>o</sup></td>
+                        <td>15<sup>o</sup></td>
+                        <td>15<sup>o</sup></td>
+                        <td>15<sup>o</sup></td>
+                        <td>15<sup>o</sup></td>
 
-                </tr>
-                <tr>
-                    <td>Average max temp</td>
-                    <td>33<sup>o</sup></td>
-                    <td>33<sup>o</sup></td>
-                    <td>33<sup>o</sup></td>
-                    <td>33<sup>o</sup></td>
-                    <td>33<sup>o</sup></td>
-                </tr>
-                <!-- Culture information -->
-                 <tr>
-                    <td colspan="6">Food &amp; Culture</td>
-                </tr>
-                <tr>
-                    <td>Unesco Sites</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>Cuisine</td>
-                    <td>Multicultural</td>
-                    <td>Multicultural</td>
-                    <td>Multicultural</td>
-                    <td>Multicultural</td>
-                    <td>Multicultural</td>
+                    </tr>
+                    <tr>
+                        <td>Average max temp</td>
+                        <td>33<sup>o</sup></td>
+                        <td>33<sup>o</sup></td>
+                        <td>33<sup>o</sup></td>
+                        <td>33<sup>o</sup></td>
+                        <td>33<sup>o</sup></td>
+                    </tr>
+                    <!-- Culture information -->
+                    <tr>
+                        <td colspan="6">Food &amp; Culture</td>
+                    </tr>
+                    <tr>
+                        <td>Unesco Sites</td>
+                        <td>21</td>
+                        <td>21</td>
+                        <td>21</td>
+                        <td>21</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Cuisine</td>
+                        <td>Multicultural</td>
+                        <td>Multicultural</td>
+                        <td>Multicultural</td>
+                        <td>Multicultural</td>
+                        <td>Multicultural</td>
 
-                </tr>
-                <tr>
-                    <td>Customs</td>
-                    <td>Casual, egalitarian</td>
-                    <td>Casual, egalitarian</td>
-                    <td>Casual, egalitarian</td>
-                    <td>Casual, egalitarian</td>
-                    <td>Casual, egalitarian</td>
+                    </tr>
+                    <tr>
+                        <td>Customs</td>
+                        <td>Casual, egalitarian</td>
+                        <td>Casual, egalitarian</td>
+                        <td>Casual, egalitarian</td>
+                        <td>Casual, egalitarian</td>
+                        <td>Casual, egalitarian</td>
 
-                </tr>
-                <!-- Immigration -->
-                 <tr>
-                    <td colspan="6">Immigration</td>
-                </tr>
-                <tr>
-                    <td>Visa-free entry</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
+                    </tr>
+                    <!-- Immigration -->
+                    <tr>
+                        <td colspan="6">Immigration</td>
+                    </tr>
+                    <tr>
+                        <td>Visa-free entry</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
 
-                </tr>
-                <tr>
-                    <td>Work Visa</td>
-                    <td>Avaliable</td>
-                    <td>Avaliable</td>
-                    <td>Avaliable</td>
-                    <td>Avaliable</td>
-                    <td>Avaliable</td>
+                    </tr>
+                    <tr>
+                        <td>Work Visa</td>
+                        <td>Avaliable</td>
+                        <td>Avaliable</td>
+                        <td>Avaliable</td>
+                        <td>Avaliable</td>
+                        <td>Avaliable</td>
 
-                </tr>
-                <tr>
-                    <td>Permanent Residency</td>
-                    <td>10 years</td>
-                    <td>10 years</td>
-                    <td>10 years</td>
-                    <td>10 years</td>
-                    <td>10 years</td>
+                    </tr>
+                    <tr>
+                        <td>Permanent Residency</td>
+                        <td>10 years</td>
+                        <td>10 years</td>
+                        <td>10 years</td>
+                        <td>10 years</td>
+                        <td>10 years</td>
 
-                </tr>
+                    </tr>
                 </tbody>
             </table>
         </section>
     </main>
-    <footer>Mondo Atlas | Project Study</footer> 
+    <footer>Mondo Atlas | Project Study</footer>
 </body>
+
 </html>

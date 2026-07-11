@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Mondo Atlas - About</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-    <nav>
-        <div>Mondo Atlas</div>
-        <ul>
+    <!-- Main page navigation -->
+    <nav id="topNav">
+        <a href="./index.html">
+            <div id="siteLogo"><img src="./assets/images/logo.svg" alt="globe logo"><span>Mondo Atlas</span></div>
+        </a>
+        <ul id="navItems">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./explore.html">Explore</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li id="activeNav"><a href="./about.html">About</a></li>
         </ul>
     </nav>
     <section>
         <h1>About us</h1>
         <div>
-            <p>This website was developed as part of the module "Project study" by Atteneri, Bohdan and Isaac. The project aimed to fulfil the need for a condensed unified informational website for immigration purposes, including cultural, practical and governmental information all in one place.</p>
+            <p>This website was developed as part of the module "Project study" by Atteneri, Bohdan and Isaac. The
+                project aimed to fulfil the need for a condensed unified informational website for immigration purposes,
+                including cultural, practical and governmental information all in one place.</p>
             <img src="./assets/images/university-of-greenwich-logo.png">
         </div>
     </section>
@@ -46,13 +53,15 @@
             <p>
                 <lable for="feedbackField">Your Feedback: </lable>
                 <br>
-                <textarea id="feedbackField" name="fMessage" rows="10" cols="50" minlength="20" required>You can write your message here.</textarea>
+                <textarea id="feedbackField" name="fMessage" rows="10" cols="50" minlength="20"
+                    required>You can write your message here.</textarea>
             </p>
-            
+
             <input type="submit" value="Submit Feedback">
 
         </form>
     </section>
-    <footer>Mondo Atlas | Project Study</footer> 
+    <footer>Mondo Atlas | Project Study</footer>
 </body>
+
 </html>
