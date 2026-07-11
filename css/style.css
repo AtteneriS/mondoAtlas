@@ -43,12 +43,13 @@ h2 {
     font-weight: 600;
 }
 
-/*===== Top navigation styles  =====*/
 a,
 a:visited {
     text-decoration: none;
-    color: black;
+    color: #fb8500;
 }
+
+/*===== Top navigation styles  =====*/
 
 #topNav {
     display: flex;
@@ -102,7 +103,7 @@ a:visited {
 }
 
 #navItems a:active {
-    color: rgb(165, 171, 177);
+    color: #fb8500;
 }
 
 li#activeNav a {
@@ -118,28 +119,79 @@ li#activeNav a {
 
 /*===== Hero Section =====*/
 .heroSection {
-    background-color: darkblue;
-    color: aliceblue;
-    padding: 2em;
+    background: linear-gradient(125deg, #023047 0%, #219ebc 100%);
+    color: #fff;
+    padding: 3em 2em;
+    text-align: center;
     margin-bottom: 2em;
 }
 
+.heroSection h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    letter-spacing: -0.03em;
+}
 
+.heroSection p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 1.2em auto;
+    line-height: 1.5em;
+}
 
-/*===== Footer Styles =====*/
-footer {
-    align-self: center;
+/* Button styles */
+.heroSection .heroButton {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #023047;
+    font-family: Monserrat, sans-serif;
+    font-weight: 600;
+    padding: 0.9em 1.8em;
+    border-radius: 2em;
+    box-shadow: 0 4px 12px rgba(2, 48, 71, 0.502);
+    transition: all 0.2s ease;
+}
+
+.heroSection .heroButton:hover {
+    background-color: #fb8500;
+    color: #fff;
+    /* transform: translateY(-2px); */
+}
+
+.heroSection .heroButton:active {
+    color: #fb8500;
+    background-color: #0F172A;
 }
 
 
+/*===== Footer Styles =====*/
+footer,
+footer a:visited {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #023047;
+    padding: 0.8em 2em;
+    margin-top: 2em;
+}
 
+footer a {
+    transition: all 0.2s ease;
+}
+
+footer a:hover {
+    color: #ffb703;
+}
+
+footer a:active {
+    color: #fb8500;
+}
 
 
 /* ====================================
 INDEX PAGE STYLES
 ==================================== */
-/* Interactive Map styles */
-/* Map settings */
+/* Map styles */
 #map {
     width: 90%;
     max-width: 1600px;
@@ -150,23 +202,23 @@ INDEX PAGE STYLES
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
-    flex-grow: 1;
 }
 
 /* Dots positions */
 .countryDot {
     position: absolute;
-    background-color: blue;
+    background-color: #219ebc;
+    border: 2px solid #fff;
     border-radius: 50%;
     width: 1em;
     height: 1em;
     transform: translate(-50%, -50%);
+    transition: all 0.2s ease-out;
 }
 
 #australiaDot {
     top: 79%;
     left: 84%;
-
 }
 
 #canadaDot {
@@ -191,9 +243,8 @@ INDEX PAGE STYLES
 
 /* Dots glow */
 .countryDot:hover {
-    background-color: mediumblue;
-    box-shadow: 0 0 0.5em 0.2em hsla(195, 53%, 79%, 0.75);
+    background-color: #fb8500;
+    box-shadow: 0 0 0.8em 0.2em rgba(255, 255, 255, 0.6);
     transform: scale(1.5) translate(-30%, -30%);
-    transition: 0.25s ease-out;
     cursor: pointer;
 }
