@@ -24,9 +24,10 @@ SITEWIDE STYLES
 #fb8500 - hover for accent/important info*/
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: #0F172A;
     background-color: white;
     min-height: 100vh;
@@ -62,7 +63,7 @@ a:visited {
 }
 
 #siteLogo {
-    font-family: Monserrat, sans-serif;
+    font-family: 'Monserrat', sans-serif;
     color: #023047;
     font-weight: 600;
     font-size: 1.2em;
@@ -141,7 +142,7 @@ li#activeNav a {
     display: inline-block;
     background-color: #ffb703;
     color: #023047;
-    font-family: Monserrat, sans-serif;
+    font-family: 'Monserrat', sans-serif;
     font-weight: 600;
     padding: 0.9em 1.8em;
     border-radius: 2em;
@@ -250,6 +251,8 @@ INDEX PAGE STYLES
 /* ====================================
 EXPLORE PAGE STYLES
 ==================================== */
+
+/* Country cards styles */
 .cardSection {
     max-width: 1200px;
     margin: 0 auto;
@@ -303,11 +306,80 @@ EXPLORE PAGE STYLES
     background-color: #219ebc;
     border-radius: 2em;
     font-size: 0.9em;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     transition: all 0.2s ease;
 }
 
 .cardText a:hover {
     background-color: #fb8500;
     transform: translateY(-1px);
+}
+
+
+/* Comparison table styles */
+.comparisonSection {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3em 2.5em;
+
+}
+
+.comparisonSection h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #023047;
+    margin-bottom: 1.5em;
+}
+
+
+.comparisonSection h2+div {
+    border-radius: 1em;
+    overflow-x: auto;
+}
+
+.comparisonTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+.comparisonTable th {
+    background-color: #023047;
+    color: #fff;
+    font-weight: 600;
+    padding: 1em 1.2em;
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;
+}
+
+/* .comparisonTable th:first-child {
+    background-color: #fff;
+}
+.comparisonTable th:nth-child(2) {
+    border-top-left-radius: 1em;
+} */
+
+.comparisonTable td {
+    padding: 0.8em 1.2em;
+    border-bottom: 1px solid #e8f4e8;
+    color: #023047;
+}
+
+.comparisonTable td:hover {
+    background-color: rgba(142, 202, 230, 0.1);
+}
+
+tbody .tableSection td:first-child {
+    background-color: #219ebc;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 0.9em 1.2em;
+}
+
+.comparisonTable td:first-child {
+    font-weight: 600;
+    color: #023047;
+    background-color: rgba(142, 202, 230, 0.1);
+
 }
