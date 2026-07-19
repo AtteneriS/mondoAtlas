@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Country 1 - Mondo Atlas</title>
+    <title>Australia - Mondo Atlas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -23,11 +23,12 @@
     <!-- Contry page Hero section -->
     <header class="countryHero" id="australiaHero">
         <div>
-            <h1>Australia 🇦🇺</h1>
+            <span class="countryFlag">🇦🇺</span>
+            <h1>Australia</h1>
             <div class="countryHeroInfo">
                 <p>Oceania · Population 27M</p>
             </div>
-            <div class="conutryTags">
+            <div class="countryTags">
                 <span class="tag">Beaches</span>
                 <span class="tag">Wildlife</span>
                 <span class="tag">Multicultural</span>
@@ -37,19 +38,21 @@
     </header>
     <!-- Country page navigation -->
     <nav class="countrySubnav" id="countryNav">
-        <a href="#overview" class="subnavActive">Overview</a>
-        <a href="#events" class="subnavLink">Events & Festivals</a>
-        <a href="#culture" class="subnavLink">Culture</a>
-        <a href="#food" class="subnavLink">Food</a>
-        <a href="#weather" class="subnavLink">Weather</a>
-        <a href="#landmarks" class="subnavLink">Landmarks</a>
-        <a href="#immigration" class="subnavLink">Imigration</a>
+        <ul>
+            <li><a href="#overview" class="subnavActive">Overview</a></li>
+            <li><a href="#events" class="subnavLink">Events & Festivals</a></li>
+            <li><a href="#culture" class="subnavLink">Culture</a></li>
+            <li><a href="#food" class="subnavLink">Food</a></li>
+            <li><a href="#weather" class="subnavLink">Weather</a></li>
+            <li><a href="#landmarks" class="subnavLink">Landmarks</a></li>
+            <li><a href="#immigration" class="subnavLink">Immigration</a></li>
+        </ul>
     </nav>
     <!-- Country page Sections -->
-    <main>
+    <main class="countryMain">
         <!-- overview -->
         <section id="overview" class="countrySection">
-            <div class="aboutCard">
+            <div class="sectionIntro">
                 <h2>About Australia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit repellendus voluptatibus debitis
                     deleniti tempora! Qui autem, possimus suscipit magni unde animi aliquid laudantium ducimus
@@ -80,12 +83,12 @@
             </div>
             <div clas="previewGrid">
                 <div class="card">
-                    <img scr="" alt="">
+                    <img scr="https://picsum.photos/200" alt="">
                     <h4>Festival Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
                 <div class="card">
-                    <img scr="" alt="">
+                    <img scr="https://picsum.photos/200" alt="">
                     <h4>Festival Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
@@ -97,12 +100,12 @@
             </div>
             <div clas="previewGrid">
                 <div class="card">
-                    <img scr="" alt="">
+                    <img scr="https://picsum.photos/200" alt="">
                     <h4>Food Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
                 <div class="card">
-                    <img scr="" alt="">
+                    <img scr="https://picsum.photos/200" alt="">
                     <h4>Food Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
@@ -114,12 +117,12 @@
             </div>
             <div clas="previewGrid">
                 <div class="card">
-                    <img scr="" alt="">
+                    <img scr="https://picsum.photos/200" alt="">
                     <h4>Landmark Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
                 <div class="card">
-                    <img scr="" alt="">
+                    <img scr="https://picsum.photos/200" alt="">
                     <h4>City Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
@@ -137,8 +140,8 @@
         </section>
         <!-- === Events & festivals === -->
         <section id="events" class="countrySection">
+            <h2>Events & Festivals</h2>
             <div class="sectionIntro">
-                <h2>Events & Festivals</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti sed aspernatur. Vero
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
@@ -185,8 +188,8 @@
         </section>
         <!-- === Culture === -->
         <section id="culture" class="countrySection">
+            <h2>Culture</h2>
             <div class="sectionIntro">
-                <h2>Culture</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti sed aspernatur. Vero
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
@@ -215,8 +218,8 @@
         </section>
         <!-- === Food === -->
         <section id="food" class="countrySection">
+            <h2>Food</h2>
             <div class="sectionIntro">
-                <h2>Food</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti sed aspernatur. Vero
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
@@ -266,8 +269,8 @@
         </section>
         <!-- === Weather === -->
         <section id="Weather" class="countrySection">
+            <h2>Weather</h2>
             <div class="sectionIntro">
-                <h2>Weather</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti sed aspernatur. Vero
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
@@ -363,8 +366,8 @@
         </section>
         <!-- ==== Landmarks ==== -->
         <section id="landmarks" class="countrySection">
+            <h2>Landmarks</h2>
             <div class="sectionIntro">
-                <h2>Landmarks</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti sed aspernatur. Vero
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
@@ -402,9 +405,9 @@
                 </div>
         </section>
         <!-- ==== Immgration ==== -->
-        <section id="immgration" class="countrySection">
+        <section id="immigration" class="countrySection">
+            <h2>Immigration</h2>
             <div class="sectionIntro">
-                <h2>Immigration</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti sed aspernatur. Vero
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
@@ -469,6 +472,9 @@
             </table>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer><a href=index.html>Mondo Atlas</a> | <a href="about.html">Project Study</a></footer>
 </body>
 
 </html>

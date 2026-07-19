@@ -432,3 +432,223 @@ ABOUT PAGE STYLES
     max-width: 100%;
     height: auto;
 }
+
+
+/* ====================================
+COUNTRY PAGES STYLES
+==================================== */
+
+
+/* Coutnry Hero section */
+.countryHero {
+    width: 100%;
+    background-color: #023047;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6em 3em;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#australiaHero {
+    background-image: url(../assets/images/nico-smit-australia.jpg);
+}
+
+#canadaHero {
+    background-image: url();
+}
+
+#germanyHero {
+    background-image: url();
+}
+
+#uaeHero {
+    background-image: url();
+}
+
+#usaHero {
+    background-image: url();
+}
+
+.countryHero div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.countryFlag {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+}
+.countryHero h1 {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.countryHero .countryHeroInfo {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.countryTags {
+    display: flex;
+    justify-content: center;
+    gap: 0.6em;
+    flex-wrap: wrap;
+}
+.tag {
+    background-color: #ffb703e6; 
+    color: #023047;
+    padding: 0.4em 1em;
+    border-radius: 2em;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+
+/* Contry sub navigation */
+.countrySubnav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(2, 48, 71, 0.08);
+    margin-bottom: 1em;
+}
+
+.countrySubnav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding:   0.8em 1em; 
+}
+
+.countrySubnav a{
+    font-size: 0.85;
+    font-weight: 600;
+    color: #6b8a9a;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    transition: all 0.2s ease;
+}
+
+.countrySubnav a:hover {
+    color: #219ebc;
+    background-color: rgba(142, 202, 230, 0.2);
+}
+
+.countrySubnav a.subnavActive {
+    background-color: #219ebc;
+    color: #fff;
+    text-decoration: underline solid 2px #fff;
+    text-underline-offset: 0.3rem;
+} 
+
+/* Main content */
+main.countryMain{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 2.5em;
+}
+
+.countryMain section {
+    margin-bottom: 2em;
+    scroll-margin-top: 5em;
+}
+
+.sectionIntro {
+    background-color: #f8fcfd;
+    border: 1px solid #d4e5ec;
+    border-left: 5px solid #219ebc;
+    border-radius: 0 1em 1em 0;
+    padding: 2em 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.countrySection h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    color:#023047;
+    margin-bottom: 0.5em;
+}
+
+
+.keyInfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.infoCardTag {
+    flex: 1 1 200px;
+    background-color: #fff;
+    border: 2px solid #e8f4e8;
+    border-radius: 1em;
+    padding: 1.5em;  
+}
+
+.infoCardTag h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    color: #6b8a9a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3em;
+}
+
+.infoCardTag p {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #023047;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.sectionHeader h3{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    color: #023047;
+}
+
+.sectionHeader a {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #219ebc;
+    transition: color 0.2s ease;
+}
+
+.sectionHeader a:hover {
+    color: #fb8500;
+}
+
+
+.previewGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.previewGrid .card {
+    flex: 1 1 220px;
+    border: green;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(2, 48, 71, 0.08);
+}
