@@ -573,6 +573,10 @@ main.countryMain{
     margin-bottom: 2.5em;
 }
 
+.sectionIntro > h2 {
+    margin-bottom: 0.8em;
+}
+
 .countrySection > h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
@@ -580,7 +584,6 @@ main.countryMain{
     padding-top: 1.5em;
     border-top: 1px solid #d4e5ec;
     margin: 1em 0;
-    position: relative;
 }
 
 
@@ -675,7 +678,7 @@ main.countryMain{
     padding: 1em 1.2em 0.2em 1.2em;
 }
 
-.date { 
+.cardTag { 
     display: inline-block;
     font-size: 0.8em;
     color: #023047;
@@ -705,7 +708,7 @@ main.countryMain{
     align-items: flex-start;
     gap: 3em;
     padding: 1.8em 0;
-    border-bottom: 1px solid #d4e5ec;
+    border-bottom: 1px solid #d4e5ec86;
 }
 
 .horizontalCard:first-child{
@@ -806,13 +809,13 @@ main.countryMain{
     color: #6b8a9a;
 }
 
-.bestSeason {
+.warmest {
     border-color: #ffb703;
     background-color: rgba(255, 183, 3, 0.08);
 }
 
-.worstSeason {
-    border-color: #fb8500;
+.coldest {
+    border-color: #219ebc;
     background-color: rgba(33, 157, 188, 0.08)
 }
 
