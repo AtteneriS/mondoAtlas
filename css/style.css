@@ -439,7 +439,7 @@ COUNTRY PAGES STYLES
 ==================================== */
 
 
-/* Coutnry Hero section */
+/* Country Hero section */
 .countryHero {
     width: 100%;
     background-color: #023047;
@@ -457,19 +457,19 @@ COUNTRY PAGES STYLES
 }
 
 #canadaHero {
-    background-image: url();
+    background-image: url(../assets/images/bruno-soares-canada.jpg);
 }
 
 #germanyHero {
-    background-image: url();
+    background-image: url(../assets/images/roman-kraft-germany.jpg);
 }
 
 #uaeHero {
-    background-image: url();
+    background-image: url(../assets/images/david-rodrigo-uae.jpg);
 }
 
 #usaHero {
-    background-image: url();
+    background-image: url(../assets/images/nik-shuliahin-usa.jpg);
 }
 
 .countryHero div {
