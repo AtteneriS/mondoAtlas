@@ -39,7 +39,7 @@
     <!-- Country page navigation -->
     <nav class="countrySubnav" id="countryNav">
         <ul>
-            <li><a href="#overview" class="subnavActive">Overview</a></li>
+            <li><a href="#overview" class="subnavLink">Overview</a></li>
             <li><a href="#events" class="subnavLink">Events & Festivals</a></li>
             <li><a href="#culture" class="subnavLink">Culture</a></li>
             <li><a href="#food" class="subnavLink">Food</a></li>
@@ -81,14 +81,14 @@
                 <h3>Important Festivals</h3>
                 <a href="#events" class="seeAllLink">See all &rarr;</a>
             </div>
-            <div clas="previewGrid">
+            <div class="cardGrid">
                 <div class="card">
-                    <img scr="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/500" alt="">
                     <h4>Festival Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
                 <div class="card">
-                    <img scr="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/500" alt="">
                     <h4>Festival Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
@@ -98,14 +98,14 @@
                 <h3>Famous & typical Food</h3>
                 <a href="#food" class="seeAllLink">See all &rarr;</a>
             </div>
-            <div clas="previewGrid">
+            <div class="cardGrid">
                 <div class="card">
-                    <img scr="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/500" alt="">
                     <h4>Food Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
                 <div class="card">
-                    <img scr="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/500" alt="">
                     <h4>Food Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
@@ -115,20 +115,20 @@
                 <h3>Top landmarks & cities</h3>
                 <a href="#landmarks" class="seeAllLink">See all &rarr;</a>
             </div>
-            <div clas="previewGrid">
+            <div class="cardGrid">
                 <div class="card">
-                    <img scr="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/500" alt="">
                     <h4>Landmark Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
                 <div class="card">
-                    <img scr="https://picsum.photos/200" alt="">
+                    <img src="https://picsum.photos/500" alt="">
                     <h4>City Name</h4>
                     <p>Distinctio quam ullam itaque nam iste quaerat vel excepturi amet explicabo ipsum.</p>
                 </div>
             </div>
             <!-- Immigration overview -->
-            <div clas="immigrationCTA">
+            <div class="immigrationCTA">
                 <div class="cta">
                     <h3>Thinking of moving to Australia?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias deserunt minima
@@ -138,6 +138,7 @@
                 </div>
             </div>
         </section>
+
         <!-- === Events & festivals === -->
         <section id="events" class="countrySection">
             <h2>Events & Festivals</h2>
@@ -151,37 +152,37 @@
                 <div class="card">
                     <img src="https://picsum.photos/200" alt="">
                     <h4>Name</h4>
-                    <span>1 Januray</span>
+                    <span class="date">1 Januray</span>
                     <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
                 </div>
                 <div class="card">
                     <img src="https://picsum.photos/200" alt="">
                     <h4>Name</h4>
-                    <span>2 Januray</span>
+                    <span class="date">2 Januray</span>
                     <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
                 </div>
                 <div class="card">
                     <img src="https://picsum.photos/200" alt="">
                     <h4>Name</h4>
-                    <span>3 Januray</span>
+                    <span class="date">3 Januray</span>
                     <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
                 </div>
                 <div class="card">
                     <img src="https://picsum.photos/200" alt="">
                     <h4>Name</h4>
-                    <span>4 Januray</span>
+                    <span class="date">4 Januray</span>
                     <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
                 </div>
                 <div class="card">
                     <img src="https://picsum.photos/200" alt="">
                     <h4>Name</h4>
-                    <span>5 Januray</span>
+                    <span class="date">5 Januray</span>
                     <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
                 </div>
                 <div class="card">
                     <img src="https://picsum.photos/200" alt="">
                     <h4>Name</h4>
-                    <span>6 Januray</span>
+                    <span class="date">6 Januray</span>
                     <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
                 </div>
             </div>
@@ -194,25 +195,55 @@
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
             </div>
-            <div class="cardGrid">
-                <div class="cultureCard">
+            <div class="horizontalRows">
+                <div class="horizontalCard">
                     <h4>Values & Customs</h4>
-                    <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
+                    <div>
+                        <p>Illo esse molestiae vitae nostrum reprehenderit quos natus tempore quam harum fuga magni
+                            asperiores illum, reiciendis aliquid iste est dolorem, et beatae!</p>
+                        <p class="cultureTags">
+                            <span>Tag</span>
+                            <span>Tag</span>
+                            <span>Tag</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="cultureCard">
+                <div class="horizontalCard">
                     <h4>Art & Traditions</h4>
-                    <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
-                    <p class="cultureTags">Tag · Tag · Tag</p>
+                    <div>
+                        <p>Illo esse molestiae vitae nostrum reprehenderit quos natus tempore quam harum fuga magni
+                            asperiores illum, reiciendis aliquid iste est dolorem, et beatae!</p>
+                        <p class="cultureTags">
+                            <span>Tag</span>
+                            <span>Tag</span>
+                            <span>Tag</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="cultureCard">
+                <div class="horizontalCard">
                     <h4>Religion</h4>
-                    <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
-                    <p class="cultureTags">Tag · Tag · Tag</p>
+                    <div>
+                        <p>Illo esse molestiae vitae nostrum reprehenderit quos natus tempore quam harum fuga magni
+                            asperiores illum, reiciendis aliquid iste est dolorem, et beatae!</p>
+                        <p class="cultureTags">
+                            <span>Tag</span>
+                            <span>Tag</span>
+                            <span>Tag</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="cultureCard">
+                <div class="horizontalCard">
                     <h4>Etiquette</h4>
-                    <p>Laudantium consequuntur id repellendus accusamus! Laudantium, veniam nesciunt.</p>
-                    <p class="cultureTags">Tag · Tag · Tag</p>
+                    <div>
+                        <p>Illo esse molestiae vitae nostrum reprehenderit quos natus tempore quam harum fuga
+                            magni
+                            asperiores illum, reiciendis aliquid iste est dolorem, et beatae!</p>
+                        <p class="cultureTags">
+                            <span>Tag</span>
+                            <span>Tag</span>
+                            <span>Tag</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -276,90 +307,90 @@
                     cumque in. Itaque, omnis?</p>
             </div>
             <h3>Montly overview</h3>
-            <div class="weatehrGrid">
-                <div class="weathercard bestSeason">
+            <div class="weatherGrid">
+                <div class="weatherCard bestSeason">
                     <span class="month">January</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">February</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">March</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">April</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard worstSeason">
                     <span class="month">May</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">June</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">July</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">August</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">September</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">October</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">November</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
-                <div class="weathercard">
+                <div class="weatherCard">
                     <span class="month">December</span>
                     <span class="monthEmoji">☀️</span>
                     <span class="monthTemp">28°C / 19°C</span>
                     <span class="monthRain">102mm</span>
                 </div>
             </div>
-            <h3>To be mindful of</h3>
+            <h4>To be mindful of</h4>
             <div class="cardGrid">
                 <div class="card">
-                    <span>Best Time</span>
-                    <h4>January - December</h4>
+                    <h4>Best Time</h4>
+                    <span class="date">January - December</span>
                     <p>Fugit laudantium sapiente praesentium provident quas aliquam dicta accusantium maiores iusto!</p>
                 </div>
                 <div class="card">
-                    <span>Be wary</span>
-                    <h4>January - December</h4>
+                    <h4>Be wary</h4>
+                    <span class="date">January - December</span>
                     <p>Fugit laudantium sapiente praesentium provident quas aliquam dicta accusantium maiores iusto!</p>
                 </div>
             </div>
@@ -412,7 +443,7 @@
                     recusandae magni modi nostrum tempore! Voluptate non reprehenderit id fugit eaque hic, consectetur
                     cumque in. Itaque, omnis?</p>
             </div>
-            <div clas="immigrationCTA">
+            <div class="immigrationCTA">
                 <div class="cta">
                     <h3>Department of immigration</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias deserunt minima
@@ -421,55 +452,65 @@
                     <a href="" class="ctaLink"> Visit Official agency ↗</a>
                 </div>
             </div>
+
             <h3>Common visa types</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Visa type</th>
-                        <th>Duration</th>
-                        <th>Processing time</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tourist</td>
-                        <td>6 months</td>
-                        <td>1-3 months</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tourist</td>
-                        <td>6 months</td>
-                        <td>1-3 months</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tourist</td>
-                        <td>6 months</td>
-                        <td>1-3 months</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tourist</td>
-                        <td>6 months</td>
-                        <td>1-3 months</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tourist</td>
-                        <td>6 months</td>
-                        <td>1-3 months</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tourist</td>
-                        <td>6 months</td>
-                        <td>1-3 months</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="visaWarning">
+                <p><span>⚠️</span>Always check with the corresponding official agency. This table might not be up to
+                    date and
+                    different
+                    rules apply to different origin countries.</p>
+            </div>
+            <div class="visaTable">
+                <table class="comparisonTable">
+                    <thead>
+                        <tr>
+                            <th>Visa type</th>
+                            <th>Duration</th>
+                            <th>Processing time</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tourist</td>
+                            <td>6 months</td>
+                            <td>1-3 months</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Work</td>
+                            <td>6 months</td>
+                            <td>1-3 months</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>6 months</td>
+                            <td>1-3 months</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Spouse/Family</td>
+                            <td>6 months</td>
+                            <td>1-3 months</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Residency</td>
+                            <td>6 months</td>
+                            <td>1-3 months</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Digital nomad</td>
+                            <td></td>
+                            <td></td>
+                            <td>Allowed for periods &lt;3 months</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </section>
     </main>
 

@@ -573,11 +573,14 @@ main.countryMain{
     margin-bottom: 2.5em;
 }
 
-.countrySection h2 {
+.countrySection > h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
     color:#023047;
-    margin-bottom: 0.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #d4e5ec;
+    margin: 1em 0;
+    position: relative;
 }
 
 
@@ -637,18 +640,254 @@ main.countryMain{
     color: #fb8500;
 }
 
+.countrySection h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
 
-.previewGrid {
+/* Cards styles */
+.cardGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5em;
     margin-bottom: 2em;
 }
 
-.previewGrid .card {
+.cardGrid .card {
     flex: 1 1 220px;
     border: green;
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(2, 48, 71, 0.08);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h4 {
+    font-size: 1.1em;
+    color: #023047;
+    padding: 1em 1.2em 0.2em 1.2em;
+}
+
+.date { 
+    display: inline-block;
+    font-size: 0.8em;
+    color: #023047;
+    background-color: rgba(255, 183, 3, 0.2);
+    font-weight: 600;
+    padding: 0.3em 0.8em;
+    border-radius: 1em;
+    margin-bottom: 0.8em;
+    margin-left: 1.2em;
+}
+
+.card p {
+    color: #6b8a9a;
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding: 0 1.2em 1.2em 1.2em;
+}
+
+/* culture cards */
+.horizontalRows{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.horizontalCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 3em;
+    padding: 1.8em 0;
+    border-bottom: 1px solid #d4e5ec;
+}
+
+.horizontalCard:first-child{
+    padding-top: 0;
+}
+.horizontalCard:last-child {
+    border-bottom: none;
+}
+
+.horizontalCard h4{
+    flex: 0 0 160px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #023047;
+    line-height: 1.5;
+}
+
+.horizontalCard div {
+    flex: 1 1 auto;
+}
+
+.horizontalCard div>p {
+    color: #4a6b7c;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+.cultureTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.cultureTags span {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #4a6b7c;
+    background-color: #f0f7fa;
+    border: 1px solid #d4e5ec;
+    padding: 0.3em 0.9em;
+    border-radius: 2em;
+    text-transform: capitalize;
+}
+
+/* Weather information cards */
+.weatherGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 2.5em;
+}
+
+.weatherCard {
+    flex: 0 1 160px;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1.2em;
+    text-align: center;
+    border: 2px solid #e8f4e8;
+    box-shadow: 0 4px 12px rgba(2, 48, 71, 0.06);
+    transition: all 0.2s ease;
+}
+
+.weatherCard:hover {
+    transform: translateY(-3px);
+}
+
+.weatherCard span {
+    display: block;
+}
+
+.month {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #6b8a9a;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+.monthEmoji{
+    font-size: 1.8em;
+    margin-bottom: 0.3em;
+}
+
+.monthTemp {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #023047;
+    margin-bottom: 0.2em;
+}
+
+.monthRain {
+    font-size: 0.8em;
+    color: #6b8a9a;
+}
+
+.bestSeason {
+    border-color: #ffb703;
+    background-color: rgba(255, 183, 3, 0.08);
+}
+
+.worstSeason {
+    border-color: #fb8500;
+    background-color: rgba(33, 157, 188, 0.08)
+}
+
+.weatherGrid+h4 {
+    margin-bottom: 1em;
+}
+
+
+/* Immigration information */
+.visaTable {
+    overflow-x: auto;
+    border-radius: 1em;
+    box-shadow: 0 4px 16px rgba(2, 48, 71, 0.06);
+    text-align: center;
+}
+
+
+.immigrationCTA {
+    background: linear-gradient(135deg, #FFB703 0%, #FB8500 100%);
+    border-radius: 1em;
+    padding: 2.5em;
+    margin-top: 2em;
+}
+
+.cta h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #023047;
+    margin-bottom: 0.5em;
+}
+
+.cta p {
+    color: #023047;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+    opacity: 0.9;
+}
+
+.cta .ctaLink{
+    display: inline-block;
+    background-color: #023047;
+    color: #fff;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    transition: all 0.2s ease;
+}
+
+.cta .ctaLink:hover{
+    background-color: #FB8500;
+    transform: translateY(-2px);
+}
+
+
+#immigration .immigrationCTA {
+    margin-bottom: 2em;
+}
+
+
+.visaWarning {
+    background-color: rgba(255, 183, 3, 0.1);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 0.6em;
+    padding: 1em 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.visaWarning p {
+    font-size: 0.9em;
+    line-height: 1;
+    color: #0F172A;
+}
+
+.visaWarning p span {
+    padding-right: 1em;
 }
