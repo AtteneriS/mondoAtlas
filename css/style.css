@@ -522,6 +522,7 @@ COUNTRY PAGES STYLES
     background-color: #fff;
     box-shadow: 0 2px 12px rgba(2, 48, 71, 0.08);
     margin-bottom: 1em;
+    z-index: 1000;
 }
 
 .countrySubnav ul {
@@ -765,6 +766,7 @@ main.countryMain {
     flex-wrap: wrap;
     gap: 1em;
     margin-bottom: 2.5em;
+    justify-content: center;
 }
 
 .weatherCard {
