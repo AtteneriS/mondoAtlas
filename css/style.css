@@ -594,8 +594,8 @@ COUNTRY PAGES STYLES
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 12px rgba(2, 48, 71, 0.08);
+    background-color: #f8fcfd;
+    box-shadow: 0 4px 12px rgba(2, 48, 71, 0.08);
     margin-bottom: 1em;
     z-index: 1000;
 }
@@ -604,17 +604,20 @@ COUNTRY PAGES STYLES
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 0.5em;
     flex-wrap: wrap;
     padding: 0.8em 1em;
+    max-width: 1200px;
 }
 
 .countrySubnav a {
-    font-size: 0.85;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #6b8a9a;
     padding: 0.5em 1em;
     border-radius: 2em;
+    text-decoration: none;
+    border: 2px solid transparent;
     transition: all 0.2s ease;
 }
 
@@ -623,7 +626,13 @@ COUNTRY PAGES STYLES
     background-color: rgba(142, 202, 230, 0.2);
 }
 
-.countrySubnav a.subnavActive {
+body:has(#overview:target) .countrySubnav a[href="#overview"],
+body:has(#events:target) .countrySubnav a[href="#events"],
+body:has(#culture:target) .countrySubnav a[href="#culture"],
+body:has(#food:target) .countrySubnav a[href="#food"],
+body:has(#weather:target) .countrySubnav a[href="#weather"],
+body:has(#landmarks:target) .countrySubnav a[href="#landmarks"],
+body:has(#immigration:target) .countrySubnav a[href="#immigration"] {
     background-color: #219ebc;
     color: #fff;
     text-decoration: underline solid 2px #fff;
