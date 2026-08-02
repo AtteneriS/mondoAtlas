@@ -23,6 +23,10 @@ SITEWIDE STYLES
 #FFB703 - Call to action/shocking value
 #fb8500 - hover for accent/important info*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -461,7 +465,6 @@ COUNTRY PAGES STYLES
     align-items: center;
 }
 
-/* Separator between breadcrumb items */
 .breadcrumb li:not(:last-child)::after {
     content: ">";
     color: rgba(255, 255, 255, 0.5);
@@ -481,6 +484,35 @@ COUNTRY PAGES STYLES
     text-underline-offset: 0.2rem;
 }
 
+/* Back to top styles */
+.back-to-top {
+    position: fixed;
+    bottom: 2.5em;
+    right: 2.5em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: #219EBC;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(2, 48, 71, 0.3);
+    transition: all 0.2s ease;
+    z-index: 1001; /* Stays above the sticky countrySubnav */
+}
+
+.back-to-top:hover {
+    background-color: #fb8500;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(251, 133, 0, 0.4);
+}
+
+.back-to-top svg {
+    width: 1.5em;
+    height: 1.5em;
+}
 
 /* Country Hero section */
 .countryHero {
