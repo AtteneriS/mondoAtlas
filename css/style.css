@@ -403,25 +403,32 @@ ABOUT PAGE STYLES
     padding: 3em 2.5em;
 }
 
-#aboutText {
+.aboutText {
     flex: 1 1 60%;
 }
 
-#aboutText h1 {
+.aboutText h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
     color: #023047;
     margin-bottom: 0.6em;
 }
 
-#aboutText p {
+.aboutText h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #023047;
+    margin-bottom: 0.6em;
+}
+
+.aboutText p {
     color: #4a6b7c;
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 1em;
 }
 
-#aboutText strong {
+.aboutText strong {
     color: #023047;
 }
 
@@ -435,6 +442,127 @@ ABOUT PAGE STYLES
 #aboutLogo img {
     max-width: 100%;
     height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .aboutInfo {
+        flex-direction: column;
+        padding: 2em 1.5em;
+    }
+    .aboutText {
+        flex: 1 1 100%;
+    }
+    #aboutLogo {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5em;
+    }
+    #aboutLogo img {
+        max-width: 400px; 
+    }
+}
+
+
+/* Form styles */
+.contactSection{
+    margin: 0 auto;
+    padding: 3em 2.5em;
+    max-width: 1200px;
+}
+.contactForm {
+    background-color: #f8fcfd;
+    border: 1px solid #d4e5ec;
+    border-radius: 1em;
+    padding: 2em;
+    box-shadow: 0 4px 12px rgba(2, 48, 71, 0.05);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formGroup {
+    margin-bottom: 1.5em;
+}
+
+.formGroup label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #023047;
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+}
+
+/* Unified input styling for touch-friendly targets */
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 2px solid #d4e5ec;
+    border-radius: 0.5em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #023047;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state for accessibility and visual feedback */
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #219EBC;
+    box-shadow: 0 0 0 3px rgba(33, 158, 188, 0.15);
+}
+
+.formGroup textarea {
+    resize: vertical; /* Allows user to make it taller, but not wider */
+    min-height: 120px;
+}
+
+/* Submit Button matching your site's CTA style */
+.submitBtn {
+    display: inline-block;
+    width: 100%;
+    background-color: #219EBC;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.9em 1.8em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(33, 158, 188, 0.3);
+}
+
+.submitBtn:hover {
+    background-color: #fb8500;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(251, 133, 0, 0.4);
+}
+
+.submitBtn:active {
+    transform: translateY(0);
+    background-color: #023047;
+}
+
+/* Contact form mobile padding adjustment */
+@media (max-width: 576px) {
+    .contactSection {
+        padding: 1em 1em 3em 1em;
+    }
+    .contactForm {
+        padding: 1.5em;
+    }
+    .contactHeader h2 {
+        font-size: 1.6em;
+    }
 }
 
 
